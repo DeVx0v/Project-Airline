@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Management System</title>
+    <link rel="stylesheet" href="./Airplane Management.css">
+    <script src="./Airplane Management.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="../Passenger/Passengers.html">Passenger Management</a>
+                <ul class="dropdown">
+                    <li><a href="../Passenger/Passengersbook.html">Book</a></li>
+                    <li><a href="../Passenger/Passengershistory.html">Travel History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../Flight/Flight Management.html">Flight Management</a>
+                <ul class="dropdown">
+                    <li><a href="../Flight/Passengers Flight.html">Passengers on Flight</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../Staff/Staff Management.html">Staff Management</a>
+                <ul class="dropdown">
+                    <li><a href="../Staff/Staff Management assignflight.html">Assign Staff to Flight</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../Airplane/Airplane Management.html">Airplane Management</a>
+                <ul class="dropdown">
+                    <li><a href="../Airplane/Assigned Airplanes.html">Assigned Airplanes</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../City/City Management.html">City Management</a>
+                <ul class="dropdown">
+                    <li><a href="../City/Intermidiate Cities for Flight.html">Intermediate Cities for Flight</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="form-container">
+            <div class="form-section">
+                <h2>Add/Update/Delete Airplane</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="plane-number">SerNum:</label>
+                        <input type="text" id="plane-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="manufacturer">Manufacturer:</label>
+                        <input type="text" id="manufacturer" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Model:</label>
+                        <input type="text" id="model" required>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" class="save-btn">Save</button>
+                        <button type="button" class="update-btn" style="display: none;">Update</button>
+                        <button type="button" class="delete-btn" style="display: none;">Delete</button>
+                        <button type="button" class="cancel-btn" style="display: none;">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <div class="search-section">
+                <h2>Airplanes</h2>
+                <div class="search-bar">
+                    <label for="plane-number-search">SerNum:</label>
+                    <input type="text" id="plane-number-search">
+                    <button type="button" class="search-btn">Search</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SerNum</th>
+                            <th>Manufacturer</th>
+                            <th>Model</th>
+                            <th>View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

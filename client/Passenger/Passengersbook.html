@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Management System</title>
+    <link rel="stylesheet" href="./Passenger Book.css">
+    <script src="./Passengersbook.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="../Passenger/Passengers.html">Passenger Management</a>
+                <ul class="dropdown">
+                    
+                    <li><a href="../Passenger/Passengersbook.html">Book</a></li>
+                    <li><a href="../Passenger/Passengershistory.html">Travel History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../Flight/Flight Management.html">Flight Management</a>
+                <ul class="dropdown">
+                    
+                    <li><a href="../Flight/Passengers Flight.html">Passengers on Flight</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../Staff/Staff Management.html">Staff Management</a>
+                <ul class="dropdown">
+                    
+                    <li><a href="../Staff/Staff Management assignflight.html">Assing Staff to Flight</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="../Airplane/Airplane Management.html">Airplane Management</a>
+                <ul class="dropdown">
+                    <li><a href="../Airplane/Assigned Airplanes.html">Assigned Airplanes</a></li>
+                </ul>
+                
+            </li>
+            <li>
+                <a href="../City/City Management.html">City Management</a>
+                <ul class="dropdown">
+                    <li><a href="../City/Intermidiate Cities for Flight.html">Intermidiate Cities for Flight</a></li>
+                </ul>
+                
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="form-container">
+            
+            <div class="search-section">
+                <h2>Book Flight</h2>
+                <div class="search-bar">
+                    <label for="passenger-id">Passenger ID:</label>
+                    <input type="text" id="passenger-id">
+                    
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Flight Number</th>
+                            <th>Date</th>
+                            <th>Origin</th>
+                            <th>Stop</th>
+                            <th>Destination</th>
+                            <th>Arrival Time</th>
+                            <th>Departure Time</th>
+                            <th>Plane Serial</th>
+                            <th>Book</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

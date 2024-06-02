@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Management System</title>
+    <link rel="stylesheet" href="./Flight Management.css">
+    <script src="./Flight Management.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="../Passenger/Passengers.html">Passenger Management</a>
+                <ul class="dropdown">
+                    
+                    <li><a href="../Passenger/Passengersbook.html">Book</a></li>
+                    <li><a href="../Passenger/Passengershistory.html">Travel History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../Flight/Flight Management.html">Flight Management</a>
+                <ul class="dropdown">
+                    
+                    <li><a href="../Flight/Passengers Flight.html">Passengers on Flight</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../Staff/Staff Management.html">Staff Management</a>
+                <ul class="dropdown">
+                    
+                    <li><a href="../Staff/Staff Management assignflight.html">Assing Staff to Flight</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="../Airplane/Airplane Management.html">Airplane Management</a>
+                <ul class="dropdown">
+                    <li><a href="../Airplane/Assigned Airplanes.html">Assigned Airplanes</a></li>
+                </ul>
+                
+            </li>
+            <li>
+                <a href="../City/City Management.html">City Management</a>
+                <ul class="dropdown">
+                    <li><a href="../City/Intermidiate Cities for Flight.html">Intermidiate Cities for Flight</a></li>
+                </ul>
+                
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="form-container">
+            <div class="form-section">
+                <h2>Schedule Flight</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="flight-number">Flight Number:</label>
+                        <input type="text" id="flight-number">
+                    </div>
+                    <div class="form-group">
+                        <label for="origin">Origin:</label>
+                        <input type="text" id="origin">
+                    </div>
+                    <button type="button" id = "citybtn" class="citybtn" style="margin-bottom: 20px;">Add Intermidiate City</button>
+                    <button type="button" id="removeCitybtn" class="removeCitybtn" style="margin-bottom: 20px;">Remove Intermidiate City</button>
+                    <div class="form-group">
+                        <label for="destination">Destination:</label>
+                        <input type="text" id="destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="departure-time">Departure Time:</label>
+                        <input type="time" id="departure-time">
+                    </div>
+                    <div class="form-group">
+                        <label for="arrival-time">Arrival Time:</label>
+                        <input type="time" id="arrival-time">
+                    </div>
+                    <div class="form-group">
+                        <label for="airplane-id">Airplane Serial:</label>
+                        <input type="text" id="airplane-id">
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" class="save-btn">Save</button>
+                        <button type="button" class="update-btn" style="display: none;">Update</button>
+                        <button type="button" class="delete-btn" style="display: none;">Delete</button>
+                        <button type="button" class="cancel-btn" style="display: none;">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <div class="search-section">
+                <h2>View Flight Information</h2>
+                <div class="search-bar">
+                    <label for="flight-number-search">Flight Number:</label>
+                    <input type="text" id="flight-number-search">
+                    <button type="button" class="search-btn">Search</button>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Flight Number</th>
+                            <th>Origin</th>
+                            <th>Stops</th>
+                            <th>Destination</th>
+                            <th>Date</th>
+                            <th>Departure Time</th>
+                            <th>Arrival Time</th>
+                            <th>Airplane Serial</th>
+                            <th>View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
